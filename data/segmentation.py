@@ -49,7 +49,7 @@ def seg_module(data, gt, superpixel_num):
     S = np.zeros([superpixel_count, 1], dtype=np.float32)
     Q = np.zeros([height * width, superpixel_count], dtype=np.float32)
 
-    # Correct indexing logic
+    
     LDA_result_flat = LDA_result.reshape(-1)  # Flatten LDA result for proper indexing
 
     for i in range(superpixel_count):
