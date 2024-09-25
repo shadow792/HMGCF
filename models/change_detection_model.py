@@ -73,7 +73,7 @@ class SSConv(nn.Module):
 
 class ChangeDetectionHMGCF(nn.Module):
     def __init__(self, height: int, width: int, channel: int, class_count: int, Q1: torch.Tensor, Q2: torch.Tensor, A1: torch.Tensor, A2: torch.Tensor, device, model='normal'):
-        super(ChangeDetectionCEGCN, self).__init__()
+        super(ChangeDetectionHMGCF, self).__init__()
 
         self.class_count = class_count
         self.channel = channel
