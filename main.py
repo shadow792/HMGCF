@@ -57,7 +57,7 @@ def main():
         net_input_concat = torch.from_numpy(np.array(data_concat, np.float32)).to(device)
 
         # Initialize the model
-        net = ChangeDetectionCEGCN(height, width, bands, 2, Q1, Q2, A1, A2, device, model='normal')
+        net = ChangeDetectionHMGCF(height, width, bands, 2, Q1, Q2, A1, A2, device, model='normal')
         net.to(device)
 
         # Train the model
