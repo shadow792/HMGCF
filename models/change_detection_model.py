@@ -84,7 +84,7 @@ class ChangeDetectionCEGCN(nn.Module):
         self.A1 = A1
         self.A2 = A2
         self.model = model
-        self.device = device  # Store device here
+        self.device = device 
 
         epsilon = 1e-10
         self.norm_col_Q1 = Q1 / (torch.sum(Q1, 0, keepdim=True) + epsilon)
