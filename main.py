@@ -5,7 +5,7 @@ import time
 from data.dataset_utils import load_dataset
 from data.segmentation import seg_module
 from utils.helpers import sampling, get_mask_onehot, print_results
-from models.change_detection_model import ChangeDetectionCEGCN
+from models.change_detection_model import ChangeDetectionHMGCF
 from training_testing.training_utils import train
 from training_testing.test import test
 import numpy as np
