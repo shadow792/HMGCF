@@ -18,8 +18,6 @@ def load_dataset():
     dataset_name = "SantaBarbara"
 
     height, width, bands = data_before.shape
-    if height < 700:
-        gt = 2 - gt  # Adjust for different dataset resolutions
 
     print(f"Dataset: {dataset_name}, Shape: {height}x{width}, Bands: {bands}")
     data_concat = np.concatenate((data_before, data_after), axis=-1)
