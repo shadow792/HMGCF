@@ -13,7 +13,6 @@ import numpy as np
 from utils.helpers import generate_png
 
 def main():
-    # Set device for training
     device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
     scale = 450
     ITER, lr, num_epochs, sampling_rate = 5, 1e-3, 300, 0.2
