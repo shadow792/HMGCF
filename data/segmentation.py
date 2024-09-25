@@ -16,30 +16,20 @@ def LDA(data, gt, height, width, bands):
     lda = LinearDiscriminantAnalysis()
     lda.fit(data_samples, gt_samples - 1)
     LDA_result = lda.transform(data_2d)
+    print(f"LDA result shape: {LDA_result.shape}")
+    num_lda_components = LDA_result.shape[1]  
 
-    # Print LDA result shape for debugging
-    print(f"LDA result shape: {LDA_result.shape}")  # Debugging
-
-    # Adjust reshape logic based on the number of LDA components
-    num_lda_components = LDA_result.shape[1]  # Number of LDA components
-
-    # If there's only one LDA component, return a 2D reshaped result
     if num_lda_components == 1:
         return np.reshape(LDA_result, [height, width])
     else:
-        # Reshape the LDA result based on the number of LDA components
         return np.reshape(LDA_result, [height, width, num_lda_components])
 
 
 def seg_module(data, gt, superpixel_num):
     height, width, bands = data.shape
     LDA_result = LDA(data, gt, height, width, bands)
-
-    # Add a check for LDA results shape
     if LDA_result.ndim == 1:
-        LDA_result = LDA_result[:, np.newaxis]  # Make it a 2D array if it's 1D
-
-    # Reshape LDA_result to its original dimensions
+        LDA_result = LDA_result[:, np.newaxis] 
     LDA_result_reshaped = np.reshape(LDA_result, (height, width, -1))
 
     segments = slic(LDA_result_reshaped, n_segments=int(superpixel_num), compactness=0.5)
@@ -47,17 +37,15 @@ def seg_module(data, gt, superpixel_num):
     segments_1d = np.reshape(segments, [-1])
 
     S = np.zeros([superpixel_count, 1], dtype=np.float32)
-    Q = np.zeros([height * width, superpixel_count], dtype=np.float32)
-
-    
-    LDA_result_flat = LDA_result.reshape(-1)  # Flatten LDA result for proper indexing
+    Q = np.zeros([height * width, superpixel_count], dtype=np.float32)   
+    LDA_result_flat = LDA_result.reshape(-1)  
 
     for i in range(superpixel_count):
         idx = np.where(segments_1d == i)[0]
         count = len(idx)
-        if count > 0:  # Avoid division by zero
+        if count > 0: 
             pixels = LDA_result_flat[idx]
-            superpixel = np.sum(pixels) / count  # Sum of pixels divided by count
+            superpixel = np.sum(pixels) / count  
             S[i] = superpixel
             Q[idx, i] = 1
 
