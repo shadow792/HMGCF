@@ -25,5 +25,6 @@ Bibtex format:
   number={},
   pages={1-15},
   keywords={Feature extraction;Convolutional neural networks;Hyperspectral imaging;Earth;Data mining;Accuracy;Surface treatment;Sensors;NASA;Kernel;Deep Learning;Change Detection;Remote Sensing Imagery;Supervised Learning;Unsupervised Learning;Graph Convolutional Network;Convolutional Neural Network},
-  doi={10.1109/JSTARS.2024.3479920}}
+  doi={10.1109/JSTARS.2024.3479920}
+  }
 
