@@ -17,14 +17,13 @@ Direct link: https://ieeexplore.ieee.org/document/10715660
 Bibtex format:
 
 @ARTICLE{10715660,
-  author={Katiyar, Chhaya and ManianL, Vidya},
+  author={Katiyar, Chhaya and Manian, Vidya},
   journal={IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing}, 
   title={Hyperspectral Multilevel GCN and CNN Feature Fusion for Change Detection}, 
   year={2024},
-  volume={},
+  volume={17},
   number={},
-  pages={1-15},
-  keywords={Feature extraction;Convolutional neural networks;Hyperspectral imaging;Earth;Data mining;Accuracy;Surface treatment;Sensors;NASA;Kernel;Deep Learning;Change Detection;Remote Sensing Imagery;Supervised Learning;Unsupervised Learning;Graph Convolutional Network;Convolutional Neural Network},
-  doi={10.1109/JSTARS.2024.3479920}
-  }
+  pages={19146-19159},
+  keywords={Feature extraction;Convolutional neural networks;Hyperspectral imaging;Earth;Data mining;Accuracy;Surface treatment;Sensors;NASA;Kernel;Change detection (CD);convolutional neural network (CNN);deep learning;graph convolutional network (GCN);remote sensing imagery;supervised learning;unsupervised learning},
+  doi={10.1109/JSTARS.2024.3479920}}
 
