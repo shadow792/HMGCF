@@ -10,7 +10,7 @@ Hyperspectral Image Change Detection (HSI-CD) focuses on identifying differences
 Reference
 If you use this code in your project, please cite:
 
-C. Katiyar and V. ManianL, "Hyperspectral Multilevel GCN and CNN Feature Fusion for Change Detection," in IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing
+C. Katiyar and V. Manian, "Hyperspectral Multilevel GCN and CNN Feature Fusion for Change Detection," in IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing
 
 Direct link: https://ieeexplore.ieee.org/document/10715660
 
