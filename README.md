@@ -7,23 +7,29 @@ Hyperspectral Image Change Detection (HSI-CD) focuses on identifying differences
 ![pipeline_](https://github.com/user-attachments/assets/7587b934-425f-4698-b122-f897a1296595)
 
 
-Reference
-If you use this code in your project, please cite:
+## 📄 Citation
 
-C. Katiyar and V. Manian, "Hyperspectral Multilevel GCN and CNN Feature Fusion for Change Detection," in IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing
+If you use this code or refer to our method in your research, please cite the following paper:
 
-Direct link: https://ieeexplore.ieee.org/document/10715660
+**Chhaya Katiyar and Vidya Manian**,  
+*Hyperspectral Multilevel GCN and CNN Feature Fusion for Change Detection*,  
+IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing, 2024.  
+🔗 [IEEE Xplore Link](https://ieeexplore.ieee.org/document/10715660)  
+📘 DOI: [10.1109/JSTARS.2024.3479920](https://doi.org/10.1109/JSTARS.2024.3479920)
 
 Bibtex format:
 
+### 📚 BibTeX:
+```bibtex
 @ARTICLE{10715660,
   author={Katiyar, Chhaya and Manian, Vidya},
-  journal={IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing}, 
-  title={Hyperspectral Multilevel GCN and CNN Feature Fusion for Change Detection}, 
+  journal={IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing},
+  title={Hyperspectral Multilevel GCN and CNN Feature Fusion for Change Detection},
   year={2024},
   volume={17},
   number={},
   pages={19146-19159},
-  keywords={Feature extraction;Convolutional neural networks;Hyperspectral imaging;Earth;Data mining;Accuracy;Surface treatment;Sensors;NASA;Kernel;Change detection (CD);convolutional neural network (CNN);deep learning;graph convolutional network (GCN);remote sensing imagery;supervised learning;unsupervised learning},
-  doi={10.1109/JSTARS.2024.3479920}}
+  doi={10.1109/JSTARS.2024.3479920},
+  keywords={Feature extraction; Convolutional neural networks; Hyperspectral imaging; Change detection (CD); Graph convolutional network (GCN); Supervised learning; Unsupervised learning; Remote sensing imagery}
+}
 
